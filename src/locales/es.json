@@ -21,7 +21,6 @@
     "BACK": "Volver"
   },
   "spaceflights": {
-    "TOTAL_NEWS": "Noticias totales:",
-    "ERROR": "Error"
+    "TOTAL_NEWS": "Novedades totales:",
   }
 }

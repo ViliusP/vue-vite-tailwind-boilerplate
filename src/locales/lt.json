@@ -22,6 +22,7 @@
   },
   "spaceflights": {
     "TOTAL_NEWS": "Naujienų iš viso:",
-    "ERROR": "Klaida"
+    "ERROR": "Klaida",
+    "LATEST_NEWS": "Paskutinės naujienos"
   }
 }
