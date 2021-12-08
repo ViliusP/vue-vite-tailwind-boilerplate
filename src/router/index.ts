@@ -4,6 +4,7 @@ import {
   RouterScrollBehavior
 } from 'vue-router'
 import routes from '@/router/routes'
+import routesNames from './routesNames'
 
 // https://next.router.vuejs.org/guide/advanced/meta.html#typescript
 declare module 'vue-router' {
@@ -56,7 +57,7 @@ _router.beforeEach((to, from, next) => {
   // Here you can use auth store to check if user currently authorized
   // In example: if(requiresAuth && useAuthStore().isAuthorized)
   if (requiresAuth) {
-    return next({ name: 'not-authorized' })
+    return next({ name: routesNames.unauthorized })
   }
   return next()
 })

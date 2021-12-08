@@ -3,12 +3,12 @@ import RoutesNames from '../routesNames'
 
 const Routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    name: RoutesNames.landing,
-    component: () => import('@/pages/landing/index.vue'),
+    path: '/secret',
+    name: RoutesNames.secret,
+    component: () => import('@/pages/secret/index.vue'),
     meta: {
       requiresAuth: true,
-      layout: 'landing'
+      layout: 'landing-page'
     }
   }
 ]

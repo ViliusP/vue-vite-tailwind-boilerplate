@@ -7,7 +7,7 @@ const Routes: RouteRecordRaw[] = [
     name: RoutesNames.landing,
     component: () => import('@/pages/landing/index.vue'),
     meta: {
-      layout: 'landing'
+      layout: 'landing-page'
     }
   }
 ]
