@@ -14,14 +14,7 @@ module.exports = {
     project: './tsconfig.eslint.json'
   },
   plugins: ['@typescript-eslint', 'tailwindcss'],
-  extends: [
-    'eslint:recommended',
-    'plugin:vue/vue3-recommended',
-    '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
-    'plugin:tailwindcss/recommended'
-  ],
+  extends: [],
   rules: {
     // override/add rules settings here, such as:
     // 'vue/no-unused-vars': 'error'
@@ -30,5 +23,14 @@ module.exports = {
   },
   env: {
     'vue/setup-compiler-macros': true
-  }
+  },
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        // Can't overload function exports with this enabled
+        'import/export': 'off'
+      }
+    }
+  ]
 }
