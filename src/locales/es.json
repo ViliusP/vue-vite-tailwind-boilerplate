@@ -1,4 +1,7 @@
 {
+  "common": {
+    "PLEASE_WAIT": "Espere, por favor..."
+  },
   "landing_page": {},
   "landing_page_layout": {
     "SECRET_PLACE": "Lugar secreto",
@@ -14,5 +17,9 @@
     "NOT_FOUND": "Página no encontrada",
     "LOST": "Perdido?",
     "BACK": "Volver"
+  },
+  "spaceflights": {
+    "TOTAL_NEWS": "Noticias totales:",
+    "ERROR": "Error"
   }
 }

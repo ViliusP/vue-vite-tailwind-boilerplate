@@ -1,4 +1,7 @@
 {
+  "common": {
+    "PLEASE_WAIT": "Prašome palaukti..."
+  },
   "landing_page": {},
   "landing_page_layout": {
     "SECRET_PLACE": "Slapta vieta",
@@ -14,5 +17,9 @@
     "NOT_FOUND": "Puslapis nerastas",
     "LOST": "Pasiklydai?",
     "BACK": "Atgal"
+  },
+  "spaceflights": {
+    "TOTAL_NEWS": "Naujienų iš viso:",
+    "ERROR": "Klaida"
   }
 }
