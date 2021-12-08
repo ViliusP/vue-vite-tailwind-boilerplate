@@ -23,7 +23,12 @@ export const useNewsStore = defineStore('spaceflight-news', {
       this.loading = true
       return new Promise((resolve, reject) => {
         newsApi
-          .getArticles()
+          .getArticles({
+            params: {
+              _start: 0,
+              _limit: 12
+            }
+          })
           .then((response) => {
             if (response.status === 200) {
               this.data = response.data
@@ -45,10 +50,10 @@ export const useNewsStore = defineStore('spaceflight-news', {
       this.loading = true
       return new Promise((resolve, reject) => {
         newsApi
-          .getArticles()
+          .getArticlesCount()
           .then((response) => {
             if (response.status === 200) {
-              this.data = response.data
+              this.count = response.data
               resolve(this.data)
             }
           })

@@ -21,13 +21,16 @@ type Event = {
   provider: string
 }
 
+export type ArticleRequestParams = {
+  params: {
+    _start: number
+    _limit: number
+  }
+}
+
 export type NewsApiError = {
   code: number
   message: string
-}
-
-export type ArticlesCount = {
-  count: number
 }
 
 export type Blog = {

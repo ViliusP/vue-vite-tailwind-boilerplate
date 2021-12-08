@@ -1,5 +1,8 @@
 import axios from 'axios'
 
+// Documentation for used API:
+// https://api.spaceflightnewsapi.net/v3/documentation
+
 const newsAxios = axios.create({
   baseURL: 'https://api.spaceflightnewsapi.net',
   timeout: 5000
