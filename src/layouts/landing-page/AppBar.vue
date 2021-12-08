@@ -1,9 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <Popover class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 z-10">
+    <div class="px-4 sm:px-6 z-10">
       <div
-        class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:space-x-10"
+        class="flex justify-between max-w-7xl mx-auto items-center border-b-2 border-gray-100 py-6 md:space-x-10"
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <router-link :to="{ name: routesNames.landing }">
