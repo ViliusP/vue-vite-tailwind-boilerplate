@@ -1,9 +1,7 @@
 <template>
-  <t-app class="overflow-hidden">
-    <div class="overflow-hidden empty-layout">
-      <slot />
-    </div>
-  </t-app>
+  <div class="overflow-hidden empty-layout">
+    <slot />
+  </div>
 </template>
 
 <script></script>
@@ -14,12 +12,16 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
-}
-
-.overflow-hidden {
-  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+  color: rgba(0, 0, 0, 0.87);
 }
 </style>
