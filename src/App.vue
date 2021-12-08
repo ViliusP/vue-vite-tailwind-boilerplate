@@ -1,11 +1,13 @@
 <template>
-  <component :is="layout">
-    <router-view :key="$route.path" v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
-  </component>
+  <transition name="between-layout-fade" mode="out-in">
+    <component :is="layout">
+      <router-view v-slot="{ Component, route }">
+        <transition name="in-layout-fade" mode="out-in">
+          <component :is="Component" :key="route.path"></component>
+        </transition>
+      </router-view>
+    </component>
+  </transition>
 </template>
 
 <script setup lang="ts">
@@ -22,13 +24,23 @@ const layout = computed(() => `${route.meta.layout || defaultLayout}-layout`)
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.1s;
+.in-layout-fade-enter-active,
+.in-layout-fade-leave-active {
+  transition: opacity 0.25s ease;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.in-layout-fade-enter-from,
+.in-layout-fade-leave-to {
+  opacity: 0;
+}
+
+.between-layout-fade-enter-active,
+.between-layout-fade-leave-active {
+  transition: opacity 0.075s ease;
+}
+
+.between-layout-fade-enter-from,
+.between-layout-fade-leave-to {
   opacity: 0;
 }
 </style>

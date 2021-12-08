@@ -2,7 +2,10 @@
   "common": {
     "PLEASE_WAIT": "Espere, por favor..."
   },
-  "landing_page": {},
+  "landing_page": {
+    "ABOUT": "Vue 3 starter boilerplate con tecnologías de vanguardia que le permiten iniciar fácilmente un nuevo proyecto que cambiará la vida de toda la humanidad",
+    "MORE": "MÁS"
+  },
   "landing_page_layout": {
     "SECRET_PLACE": "Lugar secreto",
     "SPACEFLIGHT_NEWS": "Noticias de vuelos espaciales",
@@ -22,5 +25,7 @@
   },
   "spaceflights": {
     "TOTAL_NEWS": "Novedades totales:",
+    "ERROR": "Error",
+    "LATEST_NEWS": "Últimas novedades"
   }
 }

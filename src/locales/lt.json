@@ -2,7 +2,10 @@
   "common": {
     "PLEASE_WAIT": "Prašome palaukti..."
   },
-  "landing_page": {},
+  "landing_page": {
+    "ABOUT": "Vue 3 Starter boilerplate naudoja pažangiausias technologijas, kurios palengvs naujo, žmonių gyvenimus keičiančio projekto pradžią",
+    "MORE": "DAUGIAU"
+  },
   "landing_page_layout": {
     "SECRET_PLACE": "Slapta vieta",
     "SPACEFLIGHT_NEWS": "Skrydžių į kosmosą naujienos",

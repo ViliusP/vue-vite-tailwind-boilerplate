@@ -4,7 +4,7 @@
     <Error v-if="error" :error="error" />
 
     <div class="text-5xl font-bold text-gray-600 pb-3">
-      Paskutinės naujienos
+      {{ $t('spaceflights.LATEST_NEWS') }}
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <Article v-for="article in news" :key="article.id" :article="article" />

@@ -2,7 +2,10 @@
   "common": {
     "PLEASE_WAIT": "Please wait..."
   },
-  "landing_page": {},
+  "landing_page": {
+    "ABOUT": "A Vue 3 Starter boilerplate with cutting edge technologies letting you to easily start new project that will be life-altering for whole humanity",
+    "MORE": "MORE"
+  },
   "landing_page_layout": {
     "SECRET_PLACE": "Secret place",
     "SPACEFLIGHT_NEWS": "Spaceflight news",
