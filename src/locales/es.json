@@ -9,5 +9,10 @@
     "UNAUTHORIZED": "No autorizado",
     "LOST": "Perdido?",
     "BACK": "Volver"
+  },
+  "not_found_page": {
+    "NOT_FOUND": "Página no encontrada",
+    "LOST": "Perdido?",
+    "BACK": "Volver"
   }
 }

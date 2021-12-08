@@ -9,5 +9,10 @@
     "UNAUTHORIZED": "Neautorizuota",
     "LOST": "Pasiklydai?",
     "BACK": "Atgal"
+  },
+  "not_found_page": {
+    "NOT_FOUND": "Puslapis nerastas",
+    "LOST": "Pasiklydai?",
+    "BACK": "Atgal"
   }
 }
