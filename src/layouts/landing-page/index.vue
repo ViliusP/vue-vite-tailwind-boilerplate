@@ -1,10 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="min-h-screen flex flex-col bg-gray-50">
     <AppBar class="" id="appbar" />
-    <div class="">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6">
-        <slot />
-      </div>
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 flex-grow">
+      <slot />
     </div>
     <Footer />
   </div>

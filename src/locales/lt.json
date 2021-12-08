@@ -6,7 +6,9 @@
   "landing_page_layout": {
     "SECRET_PLACE": "Slapta vieta",
     "SPACEFLIGHT_NEWS": "Skrydžių į kosmosą naujienos",
-    "DOGS": "Šunys"
+    "DOGS": "Šunys",
+    "MADE_WITH": "Pagaminta su",
+    "BY": ""
   },
   "unauthorized_page": {
     "UNAUTHORIZED": "Neautorizuota",

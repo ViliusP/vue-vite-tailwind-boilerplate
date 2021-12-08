@@ -6,7 +6,9 @@
   "landing_page_layout": {
     "SECRET_PLACE": "Lugar secreto",
     "SPACEFLIGHT_NEWS": "Noticias de vuelos espaciales",
-    "DOGS": "Perros"
+    "DOGS": "Perros",
+    "MADE_WITH": "Hecho con",
+    "BY": ""
   },
   "unauthorized_page": {
     "UNAUTHORIZED": "No autorizado",
