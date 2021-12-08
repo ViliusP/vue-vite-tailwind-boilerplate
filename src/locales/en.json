@@ -1,6 +1,9 @@
 {
-  "landing_page": {
-    "SECRET_PLACE": "Secret place"
+  "landing_page": {},
+  "landing_page_layout": {
+    "SECRET_PLACE": "Secret place",
+    "SPACEFLIGHT_NEWS": "Spaceflight news",
+    "DOGS": "Dogs"
   },
   "unauthorized_page": {
     "UNAUTHORIZED": "Unauthorized",

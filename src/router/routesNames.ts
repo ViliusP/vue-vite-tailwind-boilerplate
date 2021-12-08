@@ -3,13 +3,17 @@ export interface RoutesNames {
   notFound: string
   unauthorized: string
   secret: string
+  dogs: string
+  spaceflightNews: string
 }
 
 const routesNames: Readonly<RoutesNames> = {
   landing: 'landing',
   notFound: 'notFound',
   unauthorized: 'unauthorized',
-  secret: 'secret'
+  secret: 'secret',
+  dogs: 'dogs',
+  spaceflightNews: 'spaceflight-news'
 }
 
 export default routesNames

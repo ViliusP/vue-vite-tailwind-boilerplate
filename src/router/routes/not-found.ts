@@ -3,7 +3,7 @@ import RoutesNames from '../routesNames'
 
 const Routes: RouteRecordRaw[] = [
   {
-    path: '/not-found',
+    path: '/:pathMatch(.*)',
     name: RoutesNames.notFound,
     component: () => import('@/pages/not-found/index.vue'),
     meta: {
