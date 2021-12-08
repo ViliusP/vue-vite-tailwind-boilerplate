@@ -4,6 +4,8 @@ import type { I18n, Locale, VueI18n, Composer } from 'vue-i18n'
 
 import en from '@/locales/en.json'
 import lt from '@/locales/lt.json'
+import es from '@/locales/es.json'
+
 type MessageSchema = typeof en
 const _I18n = _setupI18n()
 
@@ -20,10 +22,11 @@ function _setupI18n(): I18n {
     fallbackLocale: 'lt',
     messages: {
       en,
-      lt
+      lt,
+      es
     }
   }
-  const i18n = createI18n<[MessageSchema], 'en' | 'lt'>(options)
+  const i18n = createI18n<[MessageSchema], 'en' | 'lt' | 'es'>(options)
   setI18nLanguage(i18n, options.locale!)
   return i18n
 }

@@ -1,0 +1,10 @@
+{
+  "landing_page": {
+    "SECRET_PLACE": "Slapta vieta"
+  },
+  "unauthorized_page": {
+    "UNAUTHORIZED": "Neautorizuota",
+    "LOST": "Pasiklydai?",
+    "BACK": "Atgal"
+  }
+}

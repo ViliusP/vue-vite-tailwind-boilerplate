@@ -1,0 +1,10 @@
+{
+  "landing_page": {
+    "SECRET_PLACE": "Lugar secreto"
+  },
+  "unauthorized_page": {
+    "UNAUTHORIZED": "No autorizado",
+    "LOST": "Perdido?",
+    "BACK": "Volver"
+  }
+}
