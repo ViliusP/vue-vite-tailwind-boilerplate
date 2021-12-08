@@ -4,7 +4,8 @@
   },
   "landing_page": {
     "ABOUT": "Vue 3 starter boilerplate con tecnologías de vanguardia que le permiten iniciar fácilmente un nuevo proyecto que cambiará la vida de toda la humanidad",
-    "MORE": "MÁS"
+    "MORE": "MÁS",
+    "LANGUAGE": "Idioma"
   },
   "landing_page_layout": {
     "SECRET_PLACE": "Lugar secreto",

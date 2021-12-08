@@ -4,7 +4,7 @@
     class="overflow-hidden z-10 mx-auto w-auto mt-10 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex items-center justify-center"
   >
     <div class="sm:text-center lg:text-left">
-      <p class="text-2xl font-medium pb-1">Kalba</p>
+      <p class="text-2xl font-medium pb-1">{{ $t('landing_page.LANGUAGE') }}</p>
       <LanguageListBox class="pb-10" />
 
       <h1
