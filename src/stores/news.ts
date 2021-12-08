@@ -10,7 +10,7 @@ interface State {
   error: string | undefined
 }
 
-export const useBlogsStore = defineStore('blogs', {
+export const useNewsStore = defineStore('spaceflight-news', {
   state: (): State => ({
     data: undefined,
     loading: false,
