@@ -10,9 +10,9 @@
       <h2
         class="mt-5 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
       >
-        <span class="block">{{ $t('unauthorized_page.UNAUTHORIZED') }}</span>
+        <span class="block">{{ $t('not_found_page.NOT_FOUND') }}</span>
         <span class="block text-indigo-600">{{
-          $t('unauthorized_page.LOST')
+          $t('not_found_page.LOST')
         }}</span>
       </h2>
       <div class="mt-4 flex lg:flex-shrink-0">
@@ -21,7 +21,7 @@
             @click="back()"
             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-indigo-600 text-white hover:bg-indigo-500"
           >
-            {{ $t('unauthorized_page.BACK') }}
+            {{ $t('not_found_page.BACK') }}
           </a>
         </div>
       </div>
