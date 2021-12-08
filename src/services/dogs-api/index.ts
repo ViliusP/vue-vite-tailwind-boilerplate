@@ -8,6 +8,7 @@ const dogsAxios = axios.create({
 dogsAxios.interceptors.request.use(
   async (config) => {
     // Do something before request is sent
+    return config
   },
   (error) => {
     // Do something with request error
@@ -19,6 +20,7 @@ dogsAxios.interceptors.request.use(
 dogsAxios.interceptors.response.use(
   (response) => {
     // Do something with response data
+    return response
   },
   (error) => {
     return Promise.reject(error)
