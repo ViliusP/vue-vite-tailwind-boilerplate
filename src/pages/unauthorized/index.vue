@@ -4,7 +4,7 @@
       <img
         alt="Security"
         class=""
-        width="250"
+        width="350"
         src="@/assets/undraw_security.svg"
       />
       <h2
