@@ -37,14 +37,14 @@
     "LATEST_NEWS": "Últimas novedades"
   },
   "messages": {
-    "email": "Neteisingas elektroninis paštas",
-    "required": "Šis laukas turi būti užpildytas",
-    "password": "Se requiere contraseña",
-    "min": "Šis laukas turi būti sudarytas iš ne mažiau negu {0} simbolių",
+    "email": "Se requiere un correo electrónico válido",
+    "required": "Este campo es obligatorio",
+    "password": "Se requiere una contraseña",
+    "min": "Este campo no debe tener menos de {0} caracteres",
     "url": "Debe ser una URL válida",
-    "confirmed": "Slaptažodžiai neatitinka. Bandykite dar kartą.",
-    "digits": "Šis laukas turi būti sudarytas iš {length} skaičių",
-    "between": "Šis laukas turi būti tarp {0} ir {1}",
-    "password_format": "Slaptažodyje turi būti nors 1 mažoji raidė, 1 didžioji raidė, 1 skaičius"
+    "confirmed": "Esas contraseñas no coinciden. Inténtalo de nuevo.",
+    "digits": "El campo debe tener {length} dígitos",
+    "between": "Este campo debe estar entre {0} y {1}",
+    "password_format": "Las contraseñas deben contener al menos 1 letra minúscula, 1 letra mayúscula y 1 carácter numérico"
   }
 }

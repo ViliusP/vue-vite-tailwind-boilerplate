@@ -43,7 +43,7 @@
     "min": "This field must have no less than {0} characters",
     "url": "Must be a valid URL",
     "confirmed": "Those passwords didn't match. Try again.",
-    "digits": "Filed must have {length} digits",
+    "digits": "Field must have {length} digits",
     "between": "This field must be between {0} and {1}",
     "password_format": "Passwords must contain at least 1 lower case letter, 1 upper case letter, 1 numeric character"
   }
