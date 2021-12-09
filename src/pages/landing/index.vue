@@ -67,19 +67,25 @@
         >
           Vue Language Features (Volar)
         </a>
+
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint"
+        >
+          Stylelint - Official Stylelint extension for Visual Studio Code
+        </a>
       </div>
     </div>
   </main>
 </template>
 
 <script lang="ts" setup>
-import LanguageListBox from '@/components/LanguageListBox.vue'
-import FeatureVue3 from './FeatureVue3.vue'
-import FeatureVite from './FeatureVite.vue'
-import FeaturePinia from './FeaturePinia.vue'
-import FeatureTypescript from './FeatureTypescript.vue'
-import FeatureTailwind from './FeatureTailwind.vue'
-import FeatureLocalization from './FeatureLocalization.vue'
-import FeatureEslint from './FeatureEslint.vue'
-import FeatureMore from './FeatureMore.vue'
+  import LanguageListBox from '@/components/LanguageListBox.vue'
+  import FeatureVue3 from './FeatureVue3.vue'
+  import FeatureVite from './FeatureVite.vue'
+  import FeaturePinia from './FeaturePinia.vue'
+  import FeatureTypescript from './FeatureTypescript.vue'
+  import FeatureTailwind from './FeatureTailwind.vue'
+  import FeatureLocalization from './FeatureLocalization.vue'
+  import FeatureEslint from './FeatureEslint.vue'
+  import FeatureMore from './FeatureMore.vue'
 </script>

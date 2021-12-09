@@ -1,36 +1,33 @@
 module.exports = {
-  root: true,
   env: {
+    browser: true,
+    es2021: true,
     node: true
   },
-  globals: {
-    config: 'readable'
-  },
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'eslint:recommended',
+    '@vue/typescript/recommended',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint'
+  ],
   parserOptions: {
+    ecmaVersion: 2021,
     parser: '@typescript-eslint/parser',
-    ecmaVersion: 2020,
     sourceType: 'module',
     extraFileExtensions: ['.vue'],
     project: './tsconfig.eslint.json'
   },
-  plugins: ['@typescript-eslint', 'tailwindcss'],
-  extends: [],
   rules: {
-    // override/add rules settings here, such as:
-    // 'vue/no-unused-vars': 'error'
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  },
-  env: {
-    'vue/setup-compiler-macros': true
-  },
-  overrides: [
-    {
-      files: ['**/*.ts', '**/*.tsx'],
-      rules: {
-        // Can't overload function exports with this enabled
-        'import/export': 'off'
-      }
-    }
-  ]
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'max-len': ['error', { code: 120, ignoreUrls: true, ignoreStrings: true }],
+    'no-underscore-dangle': [2, { allow: ['_id'] }],
+    'no-plusplus': 'off',
+    'class-methods-use-this': 'off',
+    'no-empty': ['error', { allowEmptyCatch: true }],
+    'lines-between-class-members': 'off',
+    'no-unused-expressions': ['error', { allowShortCircuit: true }],
+    'import/prefer-default-export': 'off'
+  }
 }

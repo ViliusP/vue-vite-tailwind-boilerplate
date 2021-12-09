@@ -4,10 +4,10 @@ module.exports = {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen']
+        ignoreAtRules: ['extends', 'tailwind', 'layer']
       }
     ],
-    'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null
+    'block-no-empty': null,
+    'unit-whitelist': ['em', 'rem', 's']
   }
 }

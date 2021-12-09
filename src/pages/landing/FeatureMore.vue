@@ -57,42 +57,47 @@
     <div class="pt-3">
       <a class="font-bold underline" href="https://date-fns.org/"> date-fns </a>
     </div>
+    <div class="pt-3">
+      <a class="font-bold underline" href="https://stylelint.io/">
+        Stylelint
+      </a>
+    </div>
   </FeatureContainer>
 </template>
 <script setup lang="ts">
-import { useForm, useField } from 'vee-validate'
-import FeatureContainer from './FeatureContainer.vue'
-import ArmFlex from 'vue-material-design-icons/ArmFlex.vue'
-import AccountCircle from 'vue-material-design-icons/AccountCircle.vue'
-import AccountCircleOutline from 'vue-material-design-icons/AccountCircleOutline.vue'
-import Reload from 'vue-material-design-icons/Reload.vue'
+  import { useForm, useField } from 'vee-validate'
+  import FeatureContainer from './FeatureContainer.vue'
+  import ArmFlex from 'vue-material-design-icons/ArmFlex.vue'
+  import AccountCircle from 'vue-material-design-icons/AccountCircle.vue'
+  import AccountCircleOutline from 'vue-material-design-icons/AccountCircleOutline.vue'
+  import Reload from 'vue-material-design-icons/Reload.vue'
 
-// FORM SCHEMA
-// Define a validation schema
-const schema = {
-  exampleNumber: 'required|between:9,99',
-  exampleEmail: 'required|email'
-}
-
-// Create a form context with the validation schema
-const { handleSubmit } = useForm({
-  validationSchema: schema,
-  initialValues: {
-    exampleNumber: '',
-    exampleEmail: ''
+  // FORM SCHEMA
+  // Define a validation schema
+  const schema = {
+    exampleNumber: 'required|between:9,99',
+    exampleEmail: 'required|email'
   }
-})
 
-const { value: exampleNumber, errorMessage: exampleNumberError } =
-  useField<number>('exampleNumber')
-const { value: exampleEmail, errorMessage: exampleEmailError } =
-  useField<string>('exampleEmail')
+  // Create a form context with the validation schema
+  const { handleSubmit } = useForm({
+    validationSchema: schema,
+    initialValues: {
+      exampleNumber: '',
+      exampleEmail: ''
+    }
+  })
 
-const onSubmit = handleSubmit(
-  // On valid submit
-  (values) => console.log('Submitted', values),
-  // On validation error
-  (context) => console.log('Validation error context', context)
-)
+  const { value: exampleNumber, errorMessage: exampleNumberError } =
+    useField<number>('exampleNumber')
+  const { value: exampleEmail, errorMessage: exampleEmailError } =
+    useField<string>('exampleEmail')
+
+  const onSubmit = handleSubmit(
+    // On valid submit
+    (values) => console.log('Submitted', values),
+    // On validation error
+    (context) => console.log('Validation error context', context)
+  )
 </script>
 <style lang=""></style>
