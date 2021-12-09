@@ -2,7 +2,7 @@
   <FeatureContainer
     title="Vite"
     subtitle="Next Generation Frontend Tooling"
-    docsUrl="https://vitejs.dev/"
+    docs-url="https://vitejs.dev/"
   >
     <div>
       Vite works by treating your source code and your dependencies differently.

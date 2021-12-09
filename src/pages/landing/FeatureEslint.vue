@@ -2,7 +2,7 @@
   <FeatureContainer
     title="ESLint"
     subtitle="Pluggable JavaScript linter"
-    docsUrl="https://eslint.org/"
+    docs-url="https://eslint.org/"
   >
     <div>
       ESLint statically analyzes your code to quickly find problems. ESLint is

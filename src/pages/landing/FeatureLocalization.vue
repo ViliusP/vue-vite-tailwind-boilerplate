@@ -2,7 +2,7 @@
   <FeatureContainer
     title="Localization"
     subtitle="with vue-i18n"
-    docsUrl="https://vue-i18n.intlify.dev/"
+    docs-url="https://vue-i18n.intlify.dev/"
   >
     <div>
       <span class="font-bold">Vue I18n</span> is internationalization plugin for

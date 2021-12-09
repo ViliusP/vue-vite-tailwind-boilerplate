@@ -1,5 +1,5 @@
 <template>
-  <FeatureContainer title="Tailwind" docsUrl="https://tailwindcss.com/">
+  <FeatureContainer title="Tailwind" docs-url="https://tailwindcss.com/">
     <div>
       Rapidly build modern websites without ever leaving your HTML. A
       utility-first CSS framework packed with classes like

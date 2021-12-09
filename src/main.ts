@@ -20,13 +20,13 @@ app.use(setupI18n())
 import LandingPageLayout from '@/layouts/landing-page/index.vue'
 import EmptyLayout from './layouts/empty/index.vue'
 
-app.component('landing-page-layout', LandingPageLayout)
-app.component('empty-layout', EmptyLayout)
+app.component('LandingPageLayout', LandingPageLayout)
+app.component('EmptyLayout', EmptyLayout)
 
 // Globally registered components
 
 import TextField from './components/TextField.vue'
 import OutlinedButton from './components/OutlinedButton.vue'
-app.component('text-field', TextField)
-app.component('outlined-button', OutlinedButton)
+app.component('TextField', TextField)
+app.component('OutlinedButton', OutlinedButton)
 app.mount('#app')

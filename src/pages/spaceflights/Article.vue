@@ -13,8 +13,8 @@
       <div v-show="isImageLoading">Loading</div>
       <img
         v-show="!isImageLoading"
-        @load="onImageLoad()"
         :src="props.article.imageUrl"
+        @load="onImageLoad()"
       />
     </div>
     <div class="prose">{{ props.article.summary }}</div>

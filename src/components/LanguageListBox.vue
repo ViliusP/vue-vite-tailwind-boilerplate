@@ -25,8 +25,8 @@
           class="absolute mt-1 overflow-auto bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none text-lg"
         >
           <ListboxOption
-            v-slot="{ active, selected }"
             v-for="locale in $i18n.availableLocales"
+            v-slot="{ active, selected }"
             :key="`locale-${locale}`"
             :value="locale"
             as="template"

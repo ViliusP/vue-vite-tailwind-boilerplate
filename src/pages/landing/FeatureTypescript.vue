@@ -2,7 +2,7 @@
   <FeatureContainer
     title="Typescript"
     subtitle="JavaScript With Syntax For Types."
-    docsUrl="https://www.typescriptlang.org/"
+    docs-url="https://www.typescriptlang.org/"
   >
     <div>
       <span class="font-bold">JavaScript and More.</span>

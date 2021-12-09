@@ -2,7 +2,7 @@
   <FeatureContainer
     title="Pinia"
     subtitle="The Vue Store that you will enjoy using"
-    docsUrl="https://pinia.esm.dev/"
+    docs-url="https://pinia.esm.dev/"
   >
     <div>
       According to the creator of Pinia (Eduardo San Martin Morote), who is also

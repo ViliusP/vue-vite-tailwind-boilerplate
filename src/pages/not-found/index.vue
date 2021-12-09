@@ -18,8 +18,8 @@
       <div class="mt-4 flex lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
           <a
-            @click="back()"
             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-indigo-600 text-white hover:bg-indigo-500"
+            @click="back()"
           >
             {{ $t('not_found_page.BACK') }}
           </a>

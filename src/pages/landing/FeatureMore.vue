@@ -1,6 +1,6 @@
 <template>
   <FeatureContainer title="And others">
-    <div class="pt-6" id="VeeValidate">
+    <div id="VeeValidate" class="pt-6">
       <a
         class="font-bold underline"
         href="https://vee-validate.logaretm.com/v4/"
@@ -11,16 +11,16 @@
       <form class="flex flex-col justify-items-center pt-2" @submit="onSubmit">
         <!-- Globally registered in main.ts -->
         <text-field
-          :placeHolder="$t('landing_page.EMAIL')"
-          :label="$t('landing_page.EMAIL')"
           v-model="exampleEmail"
+          :place-holder="$t('landing_page.EMAIL')"
+          :label="$t('landing_page.EMAIL')"
           :error="exampleEmailError"
         ></text-field>
         <text-field
+          v-model="exampleNumber"
           class="pb-2"
           :label="$t('landing_page.NUMBER')"
-          :placeHolder="$t('landing_page.NUMBER')"
-          v-model="exampleNumber"
+          :place-holder="$t('landing_page.NUMBER')"
           :error="exampleNumberError"
         ></text-field>
         <!-- Globally registered in main.ts -->
@@ -29,7 +29,7 @@
         >
       </form>
     </div>
-    <div class="pt-6" id="MaterialDesignIcons">
+    <div id="MaterialDesignIcons" class="pt-6">
       <a
         class="font-bold underline"
         href="https://github.com/robcresswell/vue-material-design-icons"
@@ -37,8 +37,8 @@
         Material design icons
       </a>
       <div class="flex items-center pt-2">
-        <ArmFlex fillColor="#FFAA15" :size="50" />
-        <ArmFlex fillColor="#FF0015" :size="40" />
+        <ArmFlex fill-color="#FFAA15" :size="50" />
+        <ArmFlex fill-color="#FF0015" :size="40" />
         <ArmFlex :size="30" />
         <AccountCircle :size="50" />
         <AccountCircleOutline :size="50" />
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="pt-6" id="Vue Router">
+    <div id="Vue Router" class="pt-6">
       <a class="font-bold underline" href="https://next.router.vuejs.org/">
         Vue Router
       </a>

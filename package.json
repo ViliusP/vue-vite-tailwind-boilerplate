@@ -9,7 +9,6 @@
     "generate-build-version": "node generate-build-version",
     "lint": "eslint --ext .js,.vue,.ts,.css --ignore-path .gitignore",
     "preview": "vite preview",
-    "remark": "remark . -o",
     "serve": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
   },

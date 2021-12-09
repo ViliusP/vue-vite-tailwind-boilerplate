@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col bg-gray-50">
-    <AppBar class="" id="appbar" />
+    <AppBar id="appbar" class="" />
     <div class="px-4 mx-auto max-w-7xl sm:px-6 flex-grow">
       <slot />
     </div>
