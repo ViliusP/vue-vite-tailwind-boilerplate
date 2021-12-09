@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main
-    class="overflow-hidden z-10 mx-auto w-auto mt-10 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex items-center justify-center"
+    class="overflow-hidden z-10 mx-auto w-auto mt-10 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-0 xl:mt-28 flex items-center justify-center"
   >
     <div class="sm:text-center lg:text-left">
       <p class="text-2xl font-medium pb-1">{{ $t('landing_page.LANGUAGE') }}</p>
@@ -22,13 +22,51 @@
         <div class="">*Everything above will be in English</div>
         <div class="text-5xl md:text-6xl">Feature/Libraries</div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10">
-        <FeatureVue3 />
-        <FeatureVue3 />
-        <FeatureVue3 />
-        <FeatureVue3 />
-        <FeatureVue3 />
-        <FeatureVue3 />
+
+      <iframe
+        class="block mx-auto py-4"
+        width="600"
+        height="338"
+        src="https://www.youtube-nocookie.com/embed/WLpLYhnGqPA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="clipboard-write; encrypted-media;"
+        allowfullscreen
+      ></iframe>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 py-10">
+        <FeatureVue3 class="col-span-4" />
+        <FeatureVite class="col-span-8" />
+        <FeaturePinia class="col-span-6" />
+        <FeatureTypescript class="col-span-6" />
+        <FeatureTailwind class="col-span-6" />
+        <FeatureLocalization class="col-span-6" />
+        <FeatureEslint class="col-span-6" />
+        <FeatureMore class="col-span-6" />
+      </div>
+      <div class="text-center mt-10 text-gray-900 font-medium">
+        <div class="text-4xl md:text-5xl">Recommended tools</div>
+      </div>
+      <div class="text-center text-2xl mt-5 mb-10">
+        <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+        <br />
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+        >
+          Tailwind CSS IntelliSense
+        </a>
+        <br />
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+        >
+          Prettier - Code formatter
+        </a>
+        <br />
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar"
+        >
+          Vue Language Features (Volar)
+        </a>
       </div>
     </div>
   </main>
@@ -37,4 +75,11 @@
 <script lang="ts" setup>
 import LanguageListBox from '@/components/LanguageListBox.vue'
 import FeatureVue3 from './FeatureVue3.vue'
+import FeatureVite from './FeatureVite.vue'
+import FeaturePinia from './FeaturePinia.vue'
+import FeatureTypescript from './FeatureTypescript.vue'
+import FeatureTailwind from './FeatureTailwind.vue'
+import FeatureLocalization from './FeatureLocalization.vue'
+import FeatureEslint from './FeatureEslint.vue'
+import FeatureMore from './FeatureMore.vue'
 </script>

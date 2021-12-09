@@ -5,7 +5,9 @@
   "landing_page": {
     "ABOUT": "Vue 3 starter boilerplate con tecnologías de vanguardia que le permiten iniciar fácilmente un nuevo proyecto que cambiará la vida de toda la humanidad",
     "MORE": "MÁS",
-    "LANGUAGE": "Idioma"
+    "LANGUAGE": "Idioma",
+    "EMAIL": "Correo electrónico",
+    "NUMBER": "Número"
   },
   "landing_page_layout": {
     "SECRET_PLACE": "Lugar secreto",
@@ -28,5 +30,16 @@
     "TOTAL_NEWS": "Novedades totales:",
     "ERROR": "Error",
     "LATEST_NEWS": "Últimas novedades"
+  },
+  "messages": {
+    "email": "Neteisingas elektroninis paštas",
+    "required": "Šis laukas turi būti užpildytas",
+    "password": "Se requiere contraseña",
+    "min": "Šis laukas turi būti sudarytas iš ne mažiau negu {0} simbolių",
+    "url": "Debe ser una URL válida",
+    "confirmed": "Slaptažodžiai neatitinka. Bandykite dar kartą.",
+    "digits": "Šis laukas turi būti sudarytas iš {length} skaičių",
+    "between": "Šis laukas turi būti tarp {0} ir {1}",
+    "password_format": "Slaptažodyje turi būti nors 1 mažoji raidė, 1 didžioji raidė, 1 skaičius"
   }
 }

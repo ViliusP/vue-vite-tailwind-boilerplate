@@ -5,7 +5,9 @@
   "landing_page": {
     "ABOUT": "Vue 3 Starter boilerplate naudoja pažangiausias technologijas, kurios palengvs naujo, žmonių gyvenimus keičiančio projekto pradžią",
     "MORE": "DAUGIAU",
-    "LANGUAGE": "Kalba"
+    "LANGUAGE": "Kalba",
+    "EMAIL": "El. paštas",
+    "NUMBER": "Skaičius"
   },
   "landing_page_layout": {
     "SECRET_PLACE": "Slapta vieta",
@@ -28,5 +30,16 @@
     "TOTAL_NEWS": "Naujienų iš viso:",
     "ERROR": "Klaida",
     "LATEST_NEWS": "Paskutinės naujienos"
+  },
+  "messages": {
+    "email": "Neteisingas elektroninis paštas",
+    "required": "Šis laukas turi būti užpildytas",
+    "password": "Se requiere contraseña",
+    "min": "Šis laukas turi būti sudarytas iš ne mažiau negu {0} simbolių",
+    "url": "Debe ser una URL válida",
+    "confirmed": "Slaptažodžiai neatitinka. Bandykite dar kartą.",
+    "digits": "Šis laukas turi būti sudarytas iš {length} skaičių",
+    "between": "Šis laukas turi būti tarp {0} ir {1}",
+    "password_format": "Slaptažodyje turi būti nors 1 mažoji raidė, 1 didžioji raidė, 1 skaičius"
   }
 }

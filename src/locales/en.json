@@ -5,7 +5,9 @@
   "landing_page": {
     "ABOUT": "A Vue 3 Starter boilerplate with cutting edge technologies letting you to easily start new project that will be life-altering for whole humanity",
     "MORE": "MORE",
-    "LANGUAGE": "Language"
+    "LANGUAGE": "Language",
+    "EMAIL": "Email",
+    "NUMBER": "Number"
   },
   "landing_page_layout": {
     "SECRET_PLACE": "Secret place",
@@ -28,5 +30,16 @@
     "TOTAL_NEWS": "Total news:",
     "ERROR": "Error",
     "LATEST_NEWS": "Latest news"
+  },
+  "messages": {
+    "email": "Valid email is required",
+    "required": "This field is required",
+    "password": "Password is required",
+    "min": "This field must have no less than {0} characters",
+    "url": "Must be a valid URL",
+    "confirmed": "Those passwords didn't match. Try again.",
+    "digits": "Filed must have {length} digits",
+    "between": "This field must be between {0} and {1}",
+    "password_format": "Passwords must contain at least 1 lower case letter, 1 upper case letter, 1 numeric character"
   }
 }

@@ -23,4 +23,10 @@ import EmptyLayout from './layouts/empty/index.vue'
 app.component('landing-page-layout', LandingPageLayout)
 app.component('empty-layout', EmptyLayout)
 
+// Globally registered components
+
+import TextField from './components/TextField.vue'
+import OutlinedButton from './components/OutlinedButton.vue'
+app.component('text-field', TextField)
+app.component('outlined-button', OutlinedButton)
 app.mount('#app')

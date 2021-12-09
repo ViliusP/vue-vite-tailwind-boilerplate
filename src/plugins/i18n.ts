@@ -17,15 +17,16 @@ function _setupI18n(): I18n {
   const options = {
     legacy: false,
     globalInjection: true,
-    locale:
-      localStorage.getItem('locale') || navigator.language.slice(0, 2) || 'lt',
+    locale: navigator.language.slice(0, 2) || 'lt',
     fallbackLocale: 'lt',
     messages: {
       en,
       lt,
       es
+      // Add new language here
     }
   }
+  // Add new language below
   const i18n = createI18n<[MessageSchema], 'en' | 'lt' | 'es'>(options)
   setI18nLanguage(i18n, options.locale!)
   return i18n

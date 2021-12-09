@@ -1,5 +1,9 @@
 <template>
-  <FeatureContainer name="Vue3" docsUrl="https://v3.vuejs.org/">
+  <FeatureContainer
+    title="Vue3"
+    subtitle="The Progressive JavaScript Framework"
+    docsUrl="https://v3.vuejs.org/"
+  >
     <div>
       Vue 3 is a complete rewrite of the framework. It comes with even better
       performance, better tree-shaking, smaller size, improved TypeScript

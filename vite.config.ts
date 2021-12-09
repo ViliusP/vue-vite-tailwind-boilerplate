@@ -4,7 +4,15 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue({
+      template: {
+        compilerOptions: {
+          whitespace: 'preserve'
+        }
+      }
+    })
+  ],
   server: {
     port: 8080 // <- change server port here
   },
