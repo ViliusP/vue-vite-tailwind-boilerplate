@@ -18,30 +18,30 @@
 </template>
 
 <script lang="ts" setup>
-interface Props {
-  id?: string
-  label?: string
-  type?: string
-  placeHolder?: string
-  error?: string
-  modelValue: String
-}
+  interface Props {
+    id?: string
+    label?: string
+    type?: string
+    placeHolder?: string
+    error?: string
+    modelValue: String
+  }
 
-// Ignore error: "'props' is declared but its value is never read"
-// Its automatically inject to template
-// @ts-ignore
-const props = withDefaults(defineProps<Props>(), {
-  type: 'text',
-  placeHolder: ''
-})
+  // Ignore error: "'props' is declared but its value is never read"
+  // Its automatically inject to template
+  // @ts-ignore
+  const props = withDefaults(defineProps<Props>(), {
+    type: 'text',
+    placeHolder: ''
+  })
 
-const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void
-}>()
+  const emit = defineEmits<{
+    (e: 'update:modelValue', value: string): void
+  }>()
 
-const updateInput = (e: Event) => {
-  const target = e.target as HTMLInputElement
-  emit('update:modelValue', target?.value)
-}
+  const updateInput = (e: Event) => {
+    const target = e.target as HTMLInputElement
+    emit('update:modelValue', target?.value)
+  }
 </script>
 <style lang=""></style>

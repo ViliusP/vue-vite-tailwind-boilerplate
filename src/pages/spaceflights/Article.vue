@@ -25,22 +25,22 @@
   </a>
 </template>
 <script setup lang="ts">
-import { Article } from '@/services/news-api/types'
-import { ref } from '@vue/reactivity'
-import { formatDate } from '@/utils/date'
+  import { Article } from '@/services/news-api/types'
+  import { ref } from '@vue/reactivity'
+  import { formatDate } from '@/utils/date'
 
-const props = defineProps<{
-  article: Article
-}>()
+  const props = defineProps<{
+    article: Article
+  }>()
 
-const isImageLoading = ref(false)
+  const isImageLoading = ref(false)
 
-if (props.article.imageUrl !== '' || props.article.imageUrl !== undefined) {
-  isImageLoading.value = true
-}
+  if (props.article.imageUrl !== '' || props.article.imageUrl !== undefined) {
+    isImageLoading.value = true
+  }
 
-const onImageLoad = () => {
-  isImageLoading.value = false
-}
+  const onImageLoad = () => {
+    isImageLoading.value = false
+  }
 </script>
 <style lang=""></style>

@@ -23,6 +23,6 @@
   </FeatureContainer>
 </template>
 <script setup lang="ts">
-import FeatureContainer from './FeatureContainer.vue'
+  import FeatureContainer from './FeatureContainer.vue'
 </script>
 <style lang=""></style>

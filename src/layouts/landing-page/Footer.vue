@@ -21,15 +21,15 @@
 </template>
 
 <script setup>
-import CardsHeart from 'vue-material-design-icons/CardsHeart.vue'
+  import CardsHeart from 'vue-material-design-icons/CardsHeart.vue'
 </script>
 
 <style>
-.inline-icon svg {
-  display: inline;
-}
+  .inline-icon svg {
+    display: inline;
+  }
 
-.landing-page-footer {
-  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .landing-page-footer {
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 </style>

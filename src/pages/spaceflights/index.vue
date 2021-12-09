@@ -21,24 +21,24 @@
 </template>
 
 <script setup lang="ts">
-import { useNewsStore } from '@/stores/news'
-import { computed } from '@vue/reactivity'
-import Error from './Error.vue'
-import Loader from '@/components/Loader.vue'
-import Article from './Article.vue'
+  import { useNewsStore } from '@/stores/news'
+  import { computed } from '@vue/reactivity'
+  import Error from './Error.vue'
+  import Loader from '@/components/Loader.vue'
+  import Article from './Article.vue'
 
-const spaceflightsNewsStore = useNewsStore()
-if (
-  spaceflightsNewsStore.data?.length === 0 ||
-  spaceflightsNewsStore.data === undefined
-) {
-  spaceflightsNewsStore.getArticles()
-  spaceflightsNewsStore.getArticlesCount()
-}
+  const spaceflightsNewsStore = useNewsStore()
+  if (
+    spaceflightsNewsStore.data?.length === 0 ||
+    spaceflightsNewsStore.data === undefined
+  ) {
+    spaceflightsNewsStore.getArticles()
+    spaceflightsNewsStore.getArticlesCount()
+  }
 
-const loading = computed(() => spaceflightsNewsStore.loading)
-const newsCount = computed(() => spaceflightsNewsStore.count)
+  const loading = computed(() => spaceflightsNewsStore.loading)
+  const newsCount = computed(() => spaceflightsNewsStore.count)
 
-const news = computed(() => spaceflightsNewsStore.data)
-const error = computed(() => spaceflightsNewsStore.error)
+  const news = computed(() => spaceflightsNewsStore.data)
+  const error = computed(() => spaceflightsNewsStore.error)
 </script>

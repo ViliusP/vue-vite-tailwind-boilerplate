@@ -5,7 +5,6 @@ import './main.css'
 import './plugins/axios'
 import './plugins/veevalidate'
 
-
 import { createApp } from 'vue'
 import App from './App.vue'
 

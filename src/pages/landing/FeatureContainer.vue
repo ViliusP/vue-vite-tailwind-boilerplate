@@ -22,10 +22,10 @@
   </a>
 </template>
 <script setup lang="ts">
-const props = defineProps<{
-  docsUrl?: string
-  title: string
-  subtitle?: string
-}>()
+  const props = defineProps<{
+    docsUrl?: string
+    title: string
+    subtitle?: string
+  }>()
 </script>
 <style lang=""></style>

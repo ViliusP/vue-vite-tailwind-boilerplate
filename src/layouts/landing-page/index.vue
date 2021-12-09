@@ -9,8 +9,8 @@
 </template>
 
 <script setup lang="ts">
-import Footer from './Footer.vue'
-import AppBar from './AppBar.vue'
+  import Footer from './Footer.vue'
+  import AppBar from './AppBar.vue'
 </script>
 
 <style></style>
