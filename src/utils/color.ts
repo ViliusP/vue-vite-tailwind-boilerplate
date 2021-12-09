@@ -10,13 +10,9 @@ export function isCssColor(color?: string | null): boolean {
         returns '100'
     Luminosity needs to be number or nothing
 */
-export function isTailwindColor(
-  color?: string | null | undefined
-): string | null {
+export function isTailwindColor(color?: string | null | undefined): string | null {
   if (color === null || color === undefined) return null
-  const isTailwindColor = /(?:$|^|)(text-|bg-)(\S+)(-(\d+))?(?:$|^|)/.test(
-    color
-  )
+  const isTailwindColor = /(?:$|^|)(text-|bg-)(\S+)(-(\d+))?(?:$|^|)/.test(color)
   if (!isTailwindColor) return null
   const colorParts = color.split('-')
   if (colorParts.length == 2) return colorParts[1]

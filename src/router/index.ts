@@ -1,8 +1,4 @@
-import {
-  createRouter as _createRouter,
-  createWebHistory,
-  RouterScrollBehavior
-} from 'vue-router'
+import { createRouter as _createRouter, createWebHistory, RouterScrollBehavior } from 'vue-router'
 import routes from '@/router/routes'
 import routesNames from './routesNames'
 
@@ -14,11 +10,7 @@ declare module 'vue-router' {
   }
 }
 
-const scrollBehavior: RouterScrollBehavior = function (
-  to,
-  from,
-  savedPosition
-) {
+const scrollBehavior: RouterScrollBehavior = function (to, from, savedPosition) {
   if (savedPosition) {
     // savedPosition is only available for popstate navigations.
     return savedPosition

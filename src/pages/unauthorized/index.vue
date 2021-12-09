@@ -1,19 +1,10 @@
 <template>
   <div class="ma-0 pa-0 fill-height center-message bg-gray-50">
     <div class="mx-auto">
-      <img
-        alt="Security"
-        class=""
-        width="350"
-        src="@/assets/undraw_security.svg"
-      />
-      <h2
-        class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-      >
+      <img alt="Security" class="" width="350" src="@/assets/undraw_security.svg" />
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         <span class="block">{{ $t('unauthorized_page.UNAUTHORIZED') }}</span>
-        <span class="block text-indigo-600">{{
-          $t('unauthorized_page.LOST')
-        }}</span>
+        <span class="block text-indigo-600">{{ $t('unauthorized_page.LOST') }}</span>
       </h2>
       <div class="mt-4 flex lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">

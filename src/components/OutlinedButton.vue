@@ -1,9 +1,5 @@
 <template>
-  <button
-    :class="[...colorClasses, 'tailwind-button--outlined']"
-    :style="[{ ...colorStyles }]"
-    class="p-2 rounded-lg text-base"
-  >
+  <button :class="[...colorClasses, 'tailwind-button--outlined']" :style="[{ ...colorStyles }]" class="p-2 rounded-lg text-base">
     <slot />
   </button>
 </template>

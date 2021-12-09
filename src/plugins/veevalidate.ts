@@ -1,14 +1,5 @@
 import { defineRule, configure } from 'vee-validate'
-import {
-  required,
-  email,
-  min,
-  max,
-  confirmed,
-  digits,
-  alpha,
-  between
-} from '@vee-validate/rules'
+import { required, email, min, max, confirmed, digits, alpha, between } from '@vee-validate/rules'
 
 import i18n from './i18n'
 import { translate } from './i18n'
@@ -28,10 +19,6 @@ defineRule('password_format', (value) => {
 
 configure({
   generateMessage: (fieldContext) => {
-    return translate(
-      i18n,
-      `messages.${fieldContext.rule?.name}`,
-      fieldContext.rule?.params
-    )
+    return translate(i18n, `messages.${fieldContext.rule?.name}`, fieldContext.rule?.params)
   }
 })

@@ -18,9 +18,9 @@
   import { useRoute } from 'vue-router'
 
   const defaultLayout = 'landing-page'
-  const route = useRoute()
+  const setupRoute = useRoute()
 
-  const layout = computed(() => `${route.meta.layout || defaultLayout}-layout`)
+  const layout = computed(() => `${setupRoute.meta.layout || defaultLayout}-layout`)
 </script>
 
 <style>

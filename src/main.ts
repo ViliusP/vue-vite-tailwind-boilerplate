@@ -18,7 +18,7 @@ app.use(setupI18n())
 
 // Register layouts
 import LandingPageLayout from '@/layouts/landing-page/index.vue'
-import EmptyLayout from './layouts/empty/index.vue'
+import EmptyLayout from '@/layouts/empty/EmptyLayout.vue'
 
 app.component('LandingPageLayout', LandingPageLayout)
 app.component('EmptyLayout', EmptyLayout)

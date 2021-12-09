@@ -24,14 +24,11 @@
   import { useNewsStore } from '@/stores/news'
   import { computed } from '@vue/reactivity'
   import Error from './Error.vue'
-  import Loader from '@/components/Loader.vue'
+  import Loader from '@/components/LoadingScreen.vue'
   import Article from './Article.vue'
 
   const spaceflightsNewsStore = useNewsStore()
-  if (
-    spaceflightsNewsStore.data?.length === 0 ||
-    spaceflightsNewsStore.data === undefined
-  ) {
+  if (spaceflightsNewsStore.data?.length === 0 || spaceflightsNewsStore.data === undefined) {
     spaceflightsNewsStore.getArticles()
     spaceflightsNewsStore.getArticlesCount()
   }

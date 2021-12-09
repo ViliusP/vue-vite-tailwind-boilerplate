@@ -1,12 +1,7 @@
 <template>
   <FeatureContainer title="And others">
     <div id="VeeValidate" class="pt-6">
-      <a
-        class="font-bold underline"
-        href="https://vee-validate.logaretm.com/v4/"
-      >
-        VeeValidate - Form Validation for Vue.js</a
-      >
+      <a class="font-bold underline" href="https://vee-validate.logaretm.com/v4/"> VeeValidate - Form Validation for Vue.js</a>
 
       <form class="flex flex-col justify-items-center pt-2" @submit="onSubmit">
         <!-- Globally registered in main.ts -->
@@ -24,18 +19,11 @@
           :error="exampleNumberError"
         ></text-field>
         <!-- Globally registered in main.ts -->
-        <outlined-button color="bg-indigo-500"
-          >Submit (check console)</outlined-button
-        >
+        <outlined-button color="bg-indigo-500">Submit (check console)</outlined-button>
       </form>
     </div>
     <div id="MaterialDesignIcons" class="pt-6">
-      <a
-        class="font-bold underline"
-        href="https://github.com/robcresswell/vue-material-design-icons"
-      >
-        Material design icons
-      </a>
+      <a class="font-bold underline" href="https://github.com/robcresswell/vue-material-design-icons"> Material design icons </a>
       <div class="flex items-center pt-2">
         <ArmFlex fill-color="#FFAA15" :size="50" />
         <ArmFlex fill-color="#FF0015" :size="40" />
@@ -47,9 +35,7 @@
     </div>
 
     <div id="Vue Router" class="pt-6">
-      <a class="font-bold underline" href="https://next.router.vuejs.org/">
-        Vue Router
-      </a>
+      <a class="font-bold underline" href="https://next.router.vuejs.org/"> Vue Router </a>
     </div>
     <div class="pt-3">
       <a class="font-bold underline" href="https://prettier.io/"> Prettier </a>
@@ -58,9 +44,7 @@
       <a class="font-bold underline" href="https://date-fns.org/"> date-fns </a>
     </div>
     <div class="pt-3">
-      <a class="font-bold underline" href="https://stylelint.io/">
-        Stylelint
-      </a>
+      <a class="font-bold underline" href="https://stylelint.io/"> Stylelint </a>
     </div>
   </FeatureContainer>
 </template>
@@ -88,10 +72,8 @@
     }
   })
 
-  const { value: exampleNumber, errorMessage: exampleNumberError } =
-    useField<number>('exampleNumber')
-  const { value: exampleEmail, errorMessage: exampleEmailError } =
-    useField<string>('exampleEmail')
+  const { value: exampleNumber, errorMessage: exampleNumberError } = useField<number>('exampleNumber')
+  const { value: exampleEmail, errorMessage: exampleEmailError } = useField<string>('exampleEmail')
 
   const onSubmit = handleSubmit(
     // On valid submit

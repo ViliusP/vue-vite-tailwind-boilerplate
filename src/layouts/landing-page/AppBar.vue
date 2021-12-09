@@ -2,17 +2,11 @@
 <template>
   <Popover class="bg-white">
     <div class="px-4 sm:px-6 z-10">
-      <div
-        class="flex justify-between max-w-7xl mx-auto items-center border-b-2 border-gray-100 py-6 md:space-x-10"
-      >
+      <div class="flex justify-between max-w-7xl mx-auto items-center border-b-2 border-gray-100 py-6 md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <router-link :to="{ name: routesNames.landing }">
             <span class="sr-only">Workflow</span>
-            <img
-              class="h-8 w-auto sm:h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              alt=""
-            />
+            <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="" />
           </router-link>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
@@ -24,16 +18,10 @@
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
-          <router-link
-            :to="routesNames.dogs"
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
+          <router-link :to="routesNames.dogs" class="text-base font-medium text-gray-500 hover:text-gray-900">
             {{ $t('landing_page_layout.DOGS') }}
           </router-link>
-          <router-link
-            :to="{ name: routesNames.spaceflightNews }"
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
+          <router-link :to="{ name: routesNames.spaceflightNews }" class="text-base font-medium text-gray-500 hover:text-gray-900">
             {{ $t('landing_page_layout.SPACEFLIGHT_NEWS') }}
           </router-link>
         </PopoverGroup>
@@ -57,22 +45,13 @@
       leave-from-class="opacity-100 scale-100"
       leave-to-class="opacity-0 scale-95"
     >
-      <PopoverPanel
-        focus
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-      >
-        <div
-          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
-        >
+      <PopoverPanel focus class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <div>
                 <router-link :to="{ name: routesNames.landing }">
-                  <img
-                    class="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
+                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
                 </router-link>
               </div>
               <div class="-mr-2">
@@ -87,17 +66,11 @@
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <router-link
-                :to="{ name: routesNames.dogs }"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
+              <router-link :to="{ name: routesNames.dogs }" class="text-base font-medium text-gray-900 hover:text-gray-700">
                 {{ $t('landing_page_layout.DOGS') }}
               </router-link>
 
-              <router-link
-                :to="{ name: routesNames.spaceflightNews }"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
+              <router-link :to="{ name: routesNames.spaceflightNews }" class="text-base font-medium text-gray-900 hover:text-gray-700">
                 {{ $t('landing_page_layout.SPACEFLIGHT_NEWS') }}
               </router-link>
             </div>
@@ -117,12 +90,7 @@
 </template>
 
 <script lang="ts" setup>
-  import {
-    Popover,
-    PopoverButton,
-    PopoverGroup,
-    PopoverPanel
-  } from '@headlessui/vue'
+  import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
   import Menu from 'vue-material-design-icons/Menu.vue'
   import Close from 'vue-material-design-icons/Close.vue'
 

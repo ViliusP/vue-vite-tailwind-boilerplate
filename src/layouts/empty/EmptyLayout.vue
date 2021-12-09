@@ -4,8 +4,6 @@
   </div>
 </template>
 
-<script></script>
-
 <style>
   .empty-layout {
     display: -webkit-box;

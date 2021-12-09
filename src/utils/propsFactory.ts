@@ -1,6 +1,6 @@
-import type { ComponentObjectPropsOptions, Prop, PropType } from 'vue'
-
 // Taken from vuetify
+
+import type { ComponentObjectPropsOptions, Prop, PropType } from 'vue'
 
 /**
  * Creates a factory function for props definitions.
@@ -28,21 +28,11 @@ import type { ComponentObjectPropsOptions, Prop, PropType } from 'vue'
  * }
  */
 
-export function propsFactory<PropsOptions extends ComponentObjectPropsOptions>(
-  props: PropsOptions,
-  source?: string
-) {
-  return <Defaults extends PartialKeys<PropsOptions> = {}>(
-    defaults?: Defaults
-  ): AppendDefault<PropsOptions, Defaults> => {
+export function propsFactory<PropsOptions extends ComponentObjectPropsOptions>(props: PropsOptions, source?: string) {
+  return <Defaults extends PartialKeys<PropsOptions> = {}>(defaults?: Defaults): AppendDefault<PropsOptions, Defaults> => {
     return Object.keys(props).reduce<any>((obj, prop) => {
-      const isObjectDefinition =
-        typeof props[prop] === 'object' &&
-        props[prop] != null &&
-        !Array.isArray(props[prop])
-      const definition = isObjectDefinition
-        ? props[prop]
-        : { type: props[prop] }
+      const isObjectDefinition = typeof props[prop] === 'object' && props[prop] != null && !Array.isArray(props[prop])
+      const definition = isObjectDefinition ? props[prop] : { type: props[prop] }
 
       if (defaults && prop in defaults) {
         obj[prop] = {
@@ -62,10 +52,7 @@ export function propsFactory<PropsOptions extends ComponentObjectPropsOptions>(
   }
 }
 
-type AppendDefault<
-  T extends ComponentObjectPropsOptions,
-  D extends PartialKeys<T>
-> = {
+type AppendDefault<T extends ComponentObjectPropsOptions, D extends PartialKeys<T>> = {
   [P in keyof T]-?: unknown extends D[P]
     ? T[P]
     : T[P] extends Dictionary<unknown>
@@ -80,9 +67,7 @@ type AppendDefault<
 }
 type Dictionary<T> = Record<string, T>
 
-type MergeDefault<T, D> = unknown extends D
-  ? InferPropType<T>
-  : NonNullable<InferPropType<T>> | D
+type MergeDefault<T, D> = unknown extends D ? InferPropType<T> : NonNullable<InferPropType<T>> | D
 
 /**
  * Like `Partial<T>` but doesn't care what the value is

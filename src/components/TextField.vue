@@ -29,6 +29,8 @@
 
   // Ignore error: "'props' is declared but its value is never read"
   // Its automatically inject to template
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const props = withDefaults(defineProps<Props>(), {
     type: 'text',

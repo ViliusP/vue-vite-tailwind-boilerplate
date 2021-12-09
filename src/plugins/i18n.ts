@@ -28,7 +28,7 @@ function _setupI18n(): I18n {
   }
   // Add new language below
   const i18n = createI18n<[MessageSchema], 'en' | 'lt' | 'es'>(options)
-  setI18nLanguage(i18n, options.locale!)
+  setI18nLanguage(i18n, options.locale)
   return i18n
 }
 
@@ -63,9 +63,7 @@ export function translate(i18n: I18n, key: string, params: any): string {
 }
 
 export function getLocale(i18n: I18n): string {
-  return i18n.mode === 'legacy'
-    ? (i18n.global as unknown as VueI18n).locale
-    : (i18n.global as unknown as Composer).locale.value
+  return i18n.mode === 'legacy' ? (i18n.global as unknown as VueI18n).locale : (i18n.global as unknown as Composer).locale.value
 }
 
 export default _I18n

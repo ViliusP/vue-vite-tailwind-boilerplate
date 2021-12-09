@@ -11,11 +11,7 @@
     </div>
     <div class="py-4 px-1">
       <div v-show="isImageLoading">Loading</div>
-      <img
-        v-show="!isImageLoading"
-        :src="props.article.imageUrl"
-        @load="onImageLoad()"
-      />
+      <img v-show="!isImageLoading" :src="props.article.imageUrl" @load="onImageLoad()" />
     </div>
     <div class="prose">{{ props.article.summary }}</div>
     <div class="flex-grow" />

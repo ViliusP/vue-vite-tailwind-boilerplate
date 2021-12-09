@@ -29,33 +29,20 @@ export function useColor(
     text?: ColorValue
   }>
 ) {
-  const backgroundIsCssColor = computed(() =>
-    isCssColor(colors.value.background)
-  )
-  console.log('colors.value', colors.value)
+  const backgroundIsCssColor = computed(() => isCssColor(colors.value.background))
   const textIsCssColor = computed(() => isCssColor(colors.value.text))
 
-  const backgroundIsTailwindColor = computed(() =>
-    isTailwindColor(colors.value.background)
-  )
+  const backgroundIsTailwindColor = computed(() => isTailwindColor(colors.value.background))
   const textIsTailwindColor = computed(() => isTailwindColor(colors.value.text))
 
   const colorClasses = computed(() => {
     const classes: string[] = []
 
-    if (
-      colors.value.background &&
-      !backgroundIsCssColor.value &&
-      backgroundIsTailwindColor
-    ) {
+    if (colors.value.background && !backgroundIsCssColor.value && backgroundIsTailwindColor) {
       classes.push(`bg-${backgroundIsTailwindColor.value}`)
     }
 
-    if (
-      colors.value.text &&
-      !textIsCssColor.value &&
-      textIsTailwindColor.value
-    ) {
+    if (colors.value.text && !textIsCssColor.value && textIsTailwindColor.value) {
       classes.push(`text-${textIsTailwindColor.value}`)
     }
 
