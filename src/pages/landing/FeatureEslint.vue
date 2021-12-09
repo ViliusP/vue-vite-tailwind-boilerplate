@@ -11,12 +11,9 @@
       <br />
       Used ESLint packages in this starter:
       <ul class="list-disc list-inside">
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+        <li>ESLint Plugin TypeScript</li>
+        <li>ESlint Plugin Prettier</li>
+        <li>Eslint-Plugin-Vue</li>
       </ul>
     </div>
   </FeatureContainer>
