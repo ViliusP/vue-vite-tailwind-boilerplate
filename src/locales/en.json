@@ -9,6 +9,11 @@
     "EMAIL": "Email",
     "NUMBER": "Number"
   },
+  "dogs_page": {
+    "TITLE": "Random photos and videos of puppies",
+    "NEXT": "Next",
+    "SIZE": "Size (bytes): "
+  },
   "landing_page_layout": {
     "SECRET_PLACE": "Secret place",
     "SPACEFLIGHT_NEWS": "Spaceflight news",

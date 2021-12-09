@@ -1,4 +1,4 @@
 export type RandomDog = {
-  fileSizeBByes: number
+  fileSizeBytes: number
   url: string
 }

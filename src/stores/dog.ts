@@ -10,13 +10,18 @@ interface State {
   error: string | undefined
 }
 
-export const useBlogsStore = defineStore('blogs', {
+export const useDogsStore = defineStore('dogs', {
   state: (): State => ({
     data: undefined,
     loading: false,
     error: undefined
   }),
-  getters: {},
+  getters: {
+    isUrlMp4: (state) => {
+      if (!!state.data && !!state.data.url) return /https:\/\/.*mp4/.test(state.data?.url)
+      return false
+    }
+  },
   actions: {
     getRandomDog() {
       this.loading = true

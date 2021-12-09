@@ -9,6 +9,11 @@
     "EMAIL": "El. paštas",
     "NUMBER": "Skaičius"
   },
+  "dogs_page": {
+    "TITLE": "Atsitiktinės šunų nuotraukos ir vaizdo įrašai",
+    "NEXT": "Kitas",
+    "SIZE": "Dydis (baitais): "
+  },
   "landing_page_layout": {
     "SECRET_PLACE": "Slapta vieta",
     "SPACEFLIGHT_NEWS": "Skrydžių į kosmosą naujienos",

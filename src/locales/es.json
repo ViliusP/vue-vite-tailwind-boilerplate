@@ -9,6 +9,11 @@
     "EMAIL": "Correo electrónico",
     "NUMBER": "Número"
   },
+  "dogs_page": {
+    "TITLE": "Fotos y vídeos aleatorios de cachorros",
+    "NEXT": "Siguiente",
+    "SIZE": "Tamaño (bytes): "
+  },
   "landing_page_layout": {
     "SECRET_PLACE": "Lugar secreto",
     "SPACEFLIGHT_NEWS": "Noticias de vuelos espaciales",
