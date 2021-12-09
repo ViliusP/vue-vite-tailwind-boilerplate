@@ -1,6 +1,6 @@
 # To develop
 dev:
-	npm run serve
+	npm run dev
 
 # Runs type checkking with vue-tsc and builds production app and runs it 
 # Before using run:
