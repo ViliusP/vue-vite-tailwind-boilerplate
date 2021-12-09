@@ -20,7 +20,7 @@
             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
             <span class="sr-only">Open menu</span>
-            <MenuIcon class="h-6 w-6" aria-hidden="true" />
+            <Menu :size="30" aria-hidden="true" />
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
@@ -80,7 +80,7 @@
                   class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 >
                   <span class="sr-only">Close menu</span>
-                  <XIcon class="h-6 w-6" aria-hidden="true" />
+                  <Close :size="30" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
@@ -117,12 +117,14 @@
 </template>
 
 <script lang="ts" setup>
-import {
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel
-} from '@headlessui/vue'
-import { MenuIcon, XIcon } from '@heroicons/vue/outline'
-import routesNames from '@/router/routesNames'
+  import {
+    Popover,
+    PopoverButton,
+    PopoverGroup,
+    PopoverPanel
+  } from '@headlessui/vue'
+  import Menu from 'vue-material-design-icons/Menu.vue'
+  import Close from 'vue-material-design-icons/Close.vue'
+
+  import routesNames from '@/router/routesNames'
 </script>

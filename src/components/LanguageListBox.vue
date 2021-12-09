@@ -8,7 +8,11 @@
         <span
           class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none"
         >
-          <SelectorIcon class="w-5 h-5 text-gray-400" aria-hidden="true" />
+          <ChevronDown
+            :size="25"
+            class="fill-current text-gray-400"
+            aria-hidden="true"
+          />
         </span>
       </ListboxButton>
 
@@ -42,9 +46,9 @@
               >
               <span
                 v-if="selected"
-                class="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600"
+                class="absolute inset-y-0 left-0 flex items-center pl-3 fill-current text-green-600"
               >
-                <CheckIcon class="w-5 h-5" aria-hidden="true" />
+                <Check :size="25" aria-hidden="true" />
               </span>
             </div>
           </ListboxOption>
@@ -55,35 +59,36 @@
 </template>
 
 <script lang="ts">
-import {
-  Listbox,
-  ListboxLabel,
-  ListboxButton,
-  ListboxOptions,
-  ListboxOption
-} from '@headlessui/vue'
-import { CheckIcon, SelectorIcon } from '@heroicons/vue/solid'
-import { useI18n } from 'vue-i18n'
-
-export default {
-  components: {
+  import {
     Listbox,
     ListboxLabel,
     ListboxButton,
     ListboxOptions,
-    ListboxOption,
-    CheckIcon,
-    SelectorIcon
-  },
+    ListboxOption
+  } from '@headlessui/vue'
+  import Check from 'vue-material-design-icons/Check.vue'
+  import ChevronDown from 'vue-material-design-icons/ChevronDown.vue'
+  import { useI18n } from 'vue-i18n'
 
-  setup() {
-    const { locale } = useI18n()
+  export default {
+    components: {
+      Listbox,
+      ListboxLabel,
+      ListboxButton,
+      ListboxOptions,
+      ListboxOption,
+      Check,
+      ChevronDown
+    },
 
-    const currentLocale = locale
+    setup() {
+      const { locale } = useI18n()
 
-    return {
-      currentLocale
+      const currentLocale = locale
+
+      return {
+        currentLocale
+      }
     }
   }
-}
 </script>

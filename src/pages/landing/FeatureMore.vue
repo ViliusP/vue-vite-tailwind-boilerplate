@@ -37,12 +37,12 @@
         Material design icons
       </a>
       <div class="flex items-center pt-2">
-        <ArmFlex fillColor="#FFAA15" size="50" />
-        <ArmFlex fillColor="#FF0015" size="40" />
-        <ArmFlex size="30" />
-        <AccountCircle size="50" />
-        <AccountCircleOutline size="50" />
-        <Reload class="animate-spin" size="50" />
+        <ArmFlex fillColor="#FFAA15" :size="50" />
+        <ArmFlex fillColor="#FF0015" :size="40" />
+        <ArmFlex :size="30" />
+        <AccountCircle :size="50" />
+        <AccountCircleOutline :size="50" />
+        <Reload class="animate-spin" :size="50" />
       </div>
     </div>
 
