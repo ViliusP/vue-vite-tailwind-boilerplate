@@ -51,10 +51,6 @@
         <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"> Prettier - Code formatter </a>
         <br />
         <a href="https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar"> Vue Language Features (Volar) </a>
-
-        <a href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint">
-          Stylelint - Official Stylelint extension for Visual Studio Code
-        </a>
       </div>
     </div>
   </main>

@@ -43,9 +43,6 @@
     <div class="pt-3">
       <a class="font-bold underline" href="https://date-fns.org/"> date-fns </a>
     </div>
-    <div class="pt-3">
-      <a class="font-bold underline" href="https://stylelint.io/"> Stylelint </a>
-    </div>
   </FeatureContainer>
 </template>
 <script setup lang="ts">
