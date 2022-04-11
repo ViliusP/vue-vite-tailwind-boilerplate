@@ -1,0 +1,50 @@
+{
+  "common": {
+    "PLEASE_WAIT": "Espere, por favor..."
+  },
+  "landing_page": {
+    "ABOUT": "Vue 3 starter boilerplate con tecnologías de vanguardia que le permiten iniciar fácilmente un nuevo proyecto que cambiará la vida de toda la humanidad",
+    "MORE": "MÁS",
+    "LANGUAGE": "Idioma",
+    "EMAIL": "Correo electrónico",
+    "NUMBER": "Número"
+  },
+  "dogs_page": {
+    "TITLE": "Fotos y vídeos aleatorios de cachorros",
+    "NEXT": "Siguiente",
+    "SIZE": "Tamaño (bytes): "
+  },
+  "landing_page_layout": {
+    "SECRET_PLACE": "Lugar secreto",
+    "SPACEFLIGHT_NEWS": "Noticias de vuelos espaciales",
+    "DOGS": "Perros",
+    "MADE_WITH": "Hecho con",
+    "BY": ""
+  },
+  "unauthorized_page": {
+    "UNAUTHORIZED": "No autorizado",
+    "LOST": "Perdido?",
+    "BACK": "Volver"
+  },
+  "not_found_page": {
+    "NOT_FOUND": "Página no encontrada",
+    "LOST": "Perdido?",
+    "BACK": "Volver"
+  },
+  "spaceflights": {
+    "TOTAL_NEWS": "Novedades totales:",
+    "ERROR": "Error",
+    "LATEST_NEWS": "Últimas novedades"
+  },
+  "messages": {
+    "email": "Se requiere un correo electrónico válido",
+    "required": "Este campo es obligatorio",
+    "password": "Se requiere una contraseña",
+    "min": "Este campo no debe tener menos de {0} caracteres",
+    "url": "Debe ser una URL válida",
+    "confirmed": "Esas contraseñas no coinciden. Inténtalo de nuevo.",
+    "digits": "El campo debe tener {length} dígitos",
+    "between": "Este campo debe estar entre {0} y {1}",
+    "password_format": "Las contraseñas deben contener al menos 1 letra minúscula, 1 letra mayúscula y 1 carácter numérico"
+  }
+}
